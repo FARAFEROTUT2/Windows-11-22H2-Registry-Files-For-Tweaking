@@ -1,0 +1,21 @@
+Windows Registry Editor Version 5.00
+
+;Disable unnecessary services
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\DiagTrack]
+"Start"=dword:00000004
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\dmwappushsvc]
+"Start"=dword:00000004
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\MapsBroker]
+"Start"=dword:00000004
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WMPNetworkSvc]
+"Start"=dword:00000004
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\OneSyncSvc_727c0]
+"Start"=dword:00000004
+
+;Disable Telemetry
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DataCollection]
+"AllowTelemetry"=dword:00000000
+
+;Disable Microsoft Edge First Run Wizard
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\EdgeUpdate]
+"AutoLaunchFirstRun"=dword:00000000
